@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textActivity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:text="Красная книга"
+        android:textColor="#6F0029"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textActivity2"
+        android:layout_marginTop="5sp"
+        android:layout_gravity="center"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:text="Тюльпан Регеля"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textActivity3"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:text="Тюльпан Регеля — самый редкий и необычный цветок, эндемик Казахстана. Встречается он только в Чу-Илийских горах и в Джунгарском Алатау. Растет он на камнях, имеет всего один острый листок шириной до 3 см, эллиптической формы, с продольными извилистыми гребневидными бороздками, как будто восковой.
+        \n\nЛепестки тюльпана Регеля белого цвета, ближе к центру яркого желтого цвета. Снаружи бывают красноватого или грязно-фиолетового оттенка."
+
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_marginTop="350sp"
+        android:id="@+id/button_to_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#6F0029"
+        android:fontFamily="serif"
+        android:text="Далее (окно 2)" />
+</LinearLayout>

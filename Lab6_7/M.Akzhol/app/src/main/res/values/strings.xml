@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test</string>
+
+    <!-- Заголовок -->
+    <string name="grn_title">Guess Random Number between 1 and 100</string>
+
+    <!-- Текст подсказки -->
+    <string name="grn_hint">Введите число!</string>
+
+    <!-- Кнопки -->
+    <string name="enter">Enter</string>
+    <string name="reset">Reset</string>
+
+    <!-- Result: пустое значение по умолчанию -->
+    <string name="result_empty"></string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

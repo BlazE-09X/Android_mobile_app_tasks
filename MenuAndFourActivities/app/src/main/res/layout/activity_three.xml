@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:text="Третья страница"
+        android:fontFamily="serif"
+        android:textColor="#6F0029"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="5sp"
+        android:layout_gravity="center"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:text="Ирбис (Снежный Барс)"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:text="Ирбис – редкий вид из семейства кошачьих, который преимущественно живет в горной местности Центральной Азии, также его можно встретить в горах Индии и Пакистана. По расчетам ученых этот вид на Земле существует более полутора миллионов лет. Зоологи также называют эту кошку снежным леопардом. При виде барса в глаза бросается его длинный и пушистый хвост, который сравним с длинной тела животного. Стоит отметить, что ирбис имеет один из самых длинных хвостов в своем семействе иногда он более метра. В среднем масса взрослого здорового животного при благоприятных условиях (климат и питание) достигает пятидесяти килограммов, а длинна тела вместе с хвостом до 2,5 метров. Главный источник пищи хищника - дикие горные копытные, как правило козлы и бараны."
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_marginTop="200dp"
+        android:id="@+id/button_to_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#6F0029"
+        android:fontFamily="serif"
+        android:textColor="#FFFFFF"
+        android:text="Далее (окно 4)"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="639dp"/>
+</LinearLayout>

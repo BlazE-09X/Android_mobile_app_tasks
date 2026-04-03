@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="400dp"
+        android:layout_height="595dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPath"
+        android:layout_width="267dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="648dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Путь к файлу"
+        android:text="https://cdn.pixabay.com/video/2024/06/07/215757_tiny.mp4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="700dp"
+        android:backgroundTint="#3700B3"
+        android:text="Pause"
+        android:textSize="12sp"
+        app:cornerRadius="@android:dimen/config_shapeCornerRadiusSmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_resume"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="700dp"
+        android:backgroundTint="#3700B3"
+        android:text="Resume"
+        android:textSize="10sp"
+        app:cornerRadius="@android:dimen/config_shapeCornerRadiusSmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="700dp"
+        android:backgroundTint="#3700B3"
+        android:text="Stop"
+        android:textSize="12sp"
+        app:cornerRadius="@android:dimen/config_shapeCornerRadiusSmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="115dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="648dp"
+        android:backgroundTint="#3700B3"
+        android:text="Try to play"
+        android:onClick="onClickStart"
+        app:cornerRadius="@android:dimen/config_shapeCornerRadiusSmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/loop"
+        android:layout_width="115dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="700dp"
+        android:text="Loop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

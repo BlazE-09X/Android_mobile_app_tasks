@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SRO_4</string>
+    <string-array name="groups_array">
+        <item>ВТ-31</item>
+        <item>ВТ-33</item>
+        <item>ВТ-35</item>
+        <item>ВТ-37</item>
+    </string-array>
+</resources>

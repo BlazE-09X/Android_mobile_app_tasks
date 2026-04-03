@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Image Searcher</string>
+    <string name="edit_message">Введите запрос для поиска...</string>
+
+    <string name="search_button">Найти</string>
+    <string name="like_label">Like</string>
+    <string name="dislike_label">Dislike</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+</resources>

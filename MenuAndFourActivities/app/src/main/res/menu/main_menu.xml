@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.secondwindow.MainActivity">
+    <item
+        android:id="@+id/action_window1"
+        android:title="Окно 1" />
+    <item
+        android:id="@+id/action_window2"
+        android:title="Окно 2" />
+    <item
+        android:id="@+id/action_window3"
+        android:title="Окно 3" />
+    <item
+        android:id="@+id/action_window4"
+        android:title="Окно 4" />
+</menu>

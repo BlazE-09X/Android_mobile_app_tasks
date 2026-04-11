@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:padding="20dp">
 
         <Button
-            android:id="@+id/btnLifecycle"
+            android:id="@+id/btnToast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1. Lifecycle Service" />
+            android:text="Показать Toast"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Музыкальный плеер" />
+
         <Button
-            android:id="@+id/btnNotif"
+            android:id="@+id/btnPlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2. Notifications, Foreground" />
+            android:text="Play Music" />
         <Button
-            android:id="@+id/btnPlayer"
+            android:id="@+id/btnStopMusic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. Media Player, Toast" />
-        <Button
-            android:id="@+id/btnMsg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="4. Broadcast Messages" />
+            android:text="Stop Music" />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

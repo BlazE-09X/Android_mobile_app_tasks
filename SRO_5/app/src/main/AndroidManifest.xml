@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +15,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SRO_5">
+
+        <service
+            android:name=".MyForegroundService"
+            android:foregroundServiceType="specialUse" />
+
+        <service
+            android:name=".PlayService"
+            android:foregroundServiceType="mediaPlayback" />
+        <service
+            android:name=".LifecycleService"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,6 +37,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".PlayerActivity" />
+        <activity android:name=".MessageActivity" />
+
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.MY_NOTIFICATION_ACTION" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

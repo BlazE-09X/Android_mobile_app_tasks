@@ -44,7 +44,8 @@
 
         <receiver
             android:name=".MyBroadcastReceiver"
-            android:exported="true">
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="com.example.MY_NOTIFICATION_ACTION" />
             </intent-filter>

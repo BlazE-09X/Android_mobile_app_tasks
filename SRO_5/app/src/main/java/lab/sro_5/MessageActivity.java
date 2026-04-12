@@ -12,7 +12,8 @@ public class MessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_message);
 
         findViewById(R.id.btnSend).setOnClickListener(v -> {
-            Intent intent = new Intent("com.example.MY_NOTIFICATION_ACTION");
+            Intent intent = new Intent(this, MyBroadcastReceiver.class);
+            intent.setAction("com.example.MY_NOTIFICATION_ACTION");
             intent.putExtra("msg", "Привет из Broadcast!");
             sendBroadcast(intent);
         });

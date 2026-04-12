@@ -27,6 +27,13 @@ public class LifecycleService extends Service {
         return new Binder();
     }
 
+
+    @Override
+    public boolean onUnbind(Intent intent) {
+        Log.d(TAG, "onUnbind: Сервис отвязан");
+        return super.onUnbind(intent);
+    }
+
     @Override
     public void onDestroy() {
         super.onDestroy();

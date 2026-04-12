@@ -12,13 +12,21 @@ public class NotificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
+
+        Intent intent = new Intent(this, MyForegroundService.class);
+
+
         findViewById(R.id.btnShowNotif).setOnClickListener(v -> {
-            Intent intent = new Intent(this, MyForegroundService.class);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 startForegroundService(intent);
             } else {
                 startService(intent);
             }
+        });
+
+
+        findViewById(R.id.btnStopNotif).setOnClickListener(v -> {
+            stopService(intent);
         });
     }
 }
